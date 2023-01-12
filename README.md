@@ -47,7 +47,7 @@ docker build --platform linux/x86_64 -t cisc204 .
 
 In the run script above, the `-v $(pwd):/PROJECT` is used to mount the current directory to the container. If you are using a different OS, you may need to change this to the following:
 
-- Windows PowerShell: `-v {PWD}:/PROJECT`
+- Windows PowerShell: `-v ${PWD}:/PROJECT`
 - Windows CMD: `-v %cd%:/PROJECT`
 - Mac: `-v $(pwd):/PROJECT`
 
